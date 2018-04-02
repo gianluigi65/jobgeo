@@ -1,0 +1,107 @@
+html, body{height: 100%;}
+body{background-color: grey}
+
+/*----------------------------------
+general
+----------------------------------*/
+.animate{
+    webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+}
+
+.button{display: inline-block; background: white; color: black; padding: 15px 30px; border-radius: 3px; text-decoration: none;}
+p{line-height: 22px;}
+a{color: #16DD94;}
+a:hover{color: #1AF3A4}
+
+/*.badge{background-color:brown;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}
+.badge{border-radius:50%}*/
+
+/*----------------------------------
+cover
+----------------------------------*/
+.cover{height: 95%;
+    background-image: url("https://source.unsplash.com/random/400x400");
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    position:relative;
+}
+.cover__filter{background: black; width: 100%; height: 100%; position: absolute; z-index: 0; opacity: 0.6;}
+.cover__caption{display: table; height: 100%; width: 100%; position: relative; z-index: 1; padding: 50px 20px;}
+.cover__caption__copy{display: table-cell; vertical-align: top; text-align: center; color: white;}
+.cover__caption__copy h1 {font-family: 'ChunkFive', normal; font-size: 6.25em; color: #CCFFCC;}
+/*.cover__caption__copy h1 {font-family: 'Walter Turncoat', normal; font-size: 100px;}*/
+
+.cover--login{height: 55%;}  /*modify per login.html*/
+
+/*----------------------------------
+footer
+----------------------------------*/
+.footer{background: #333; padding: 30px; color: #FFF; margin-top: 50px;}
+
+/*----------------------------------
+login
+----------------------------------*/
+.login{}
+.login__copy{max-width: 800px; margin: -60px  auto 60px; background: #FFF; padding: 20px 40px; border: 3px solid #a1887f; position: relative; z-index: 1;}
+.login__copy__group{position:relative;margin-top:30px;margin-bottom:30px;}
+.login__copy__group__input{padding:10px;display:block;border:none;border-bottom:1px solid #808080;}
+.login__copy__group__label {position:absolute;top:0;left:0;color:#009688;transition:0.2s ease all;-moz-transition:0.2s ease all;-webkit-transition:0.2s ease all;}
+.login__copy__group__input:focus ~ .login__copy__group__label{top:-20px;color:#888;}
+.login__copy__group__input:valid ~ .login__copy__group__label{top:-20px;color:#888;}
+.login__copy__button{display: inline-block; background: #a1887f; color: white; padding: 15px 30px;margin-top: -25px;border-radius: 3px; text-decoration: none;}
+
+/*----------------------------------
+TABLET
+----------------------------------*/
+@media (max-width: 1200px) {
+
+  /*banner*/
+.banner__copy{width: 70%; height: 100%;}
+.banner__image{width: 30%; height: 100%;}
+}
+
+/*----------------------------------
+SMARTPHONE
+----------------------------------*/
+@media (max-width: 998px) {
+
+/*header*/
+.header{position: fixed; z-index: 100; width:100%;}
+.header__icon-bar{display: block;}
+.header__menu{width: 100%; height: 0px; overflow: hidden}  /*fa in modo che il menu non rimanga sempre presente */
+.header__menu__item {display: block}
+.header__menu__item span.no_display{display: inline-block;}
+.is-open{height: 300px; overflow: auto}
+
+/*cover*/
+.cover{height: 100%;}
+
+/*under construction*/
+.under_construction h1{font-size:35px;margin-top: 20px;}
+}
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+*,
+*:before,
+*:after{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+                box-sizing: border-box;
+}
