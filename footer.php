@@ -5,7 +5,7 @@
                 <img src="images/nodoiona1.png" style="vertical-align:middle;">
             </td>
             <td class="footer__item">
-                <p>Copyright - 2017 [JLouis Design]</p>
+                <p>Copyright - 2017 [JLD]</p>
             </td>
         </tr>
     </table>
